@@ -1,10 +1,6 @@
 from .base_page import BasePage 
 from .locators import MainPageLocators
-from .locators import AddToBasketLocators
-from .login_page import LoginPage
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoAlertPresentException
-import math
+
 
 class MainPage(BasePage): 
     def go_to_login_page(self):

@@ -37,3 +37,11 @@ class PageObject(BasePage):
         except NoAlertPresentException:
             print("No second alert presented")
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*AddToBasketLocators.BOOKS_NAME_CHECK), \
+            "Success message is presented, but should not be"
+
+    def should_be_disappeared_message(self):
+        assert self.is_disappeared(*AddToBasketLocators.BOOKS_NAME_CHECK), \
+            "Success message is presented, but should not be"
+
