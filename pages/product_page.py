@@ -4,7 +4,7 @@ from .locators import MainPageLocators
 from selenium.common.exceptions import NoAlertPresentException
 import math
 
-class PageObject(BasePage):
+class ProductPage(BasePage):
     def should_be_correct_name_and_cost_of_book(self):
         self.should_be_correct_name_of_product()
         self.should_be_correct_cost_of_product()
