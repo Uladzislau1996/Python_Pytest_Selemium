@@ -13,9 +13,11 @@ class AddToBasketLocators():
     BOOKS_COST = (By.CSS_SELECTOR, ".product_main>.price_color")
     BOOKS_NAME_CHECK = (By.CSS_SELECTOR, ".alertinner>strong")
     BOOKS_COST_CHECK = (By.CSS_SELECTOR, ".alertinner>p>strong")
+    CHECK_FOR_EMPTY_BASKET = (By.CSS_SELECTOR, ".basket-title")
+    CHECK_EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner>p")
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
-
+    GO_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group>a")
  
